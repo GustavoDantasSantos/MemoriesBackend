@@ -1,0 +1,31 @@
+{
+  "name": "memoriesbackend",
+  "version": "1.0.0",
+  "main": "server.ts",
+  "author": "Gustavo Dantas",
+  "license": "MIT",
+  "scripts": {
+    "dev": "tsx src/server.ts",
+    "build": "tsup src",
+    "test": "vitest",
+    "dev:watch": "tsx watch src/server.ts"
+  },
+  "devDependencies": {
+    "@types/express": "types/express",
+    "@typescript-eslint/eslint-plugin": "^5.51.0",
+    "@typescript-eslint/parser": "^5.51.0",
+    "eslint": ">=8.0.0",
+    "eslint-config-prettier": "^8.6.0",
+    "eslint-config-xo": "^0.43.1",
+    "eslint-config-xo-typescript": "^0.55.1",
+    "eslint-plugin-prettier": "^4.2.1",
+    "prettier": "^2.8.3",
+    "tsup": "^6.6.0",
+    "tsx": "^3.12.3",
+    "typescript": ">=4.4",
+    "vitest": "^0.28.4"
+  },
+  "dependencies": {
+    "express": "^4.18.2"
+  }
+}
