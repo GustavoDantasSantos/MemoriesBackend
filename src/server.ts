@@ -1,3 +1,5 @@
-import Express from 'express';
+import { app } from "./app";
 
-export const app = Express();
+app.listen(3009, () => {
+    console.log('Server up');
+});
