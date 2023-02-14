@@ -1,12 +1,12 @@
 import { IUser } from "../entity/IUser";
-import { IUserRepository } from "../repository/IUserRepository";
+import { IUserRepository } from "../repository/interface/IUserRepository";
 
 class ListAllUserService {
 
     private repository: IUserRepository;
 
-    constructor(iUserRepository: IUserRepository) {
-        this.repository = iUserRepository;
+    constructor(repository: IUserRepository) {
+        this.repository = repository;
     };
 
     public async execute(): Promise<IUser[]> {

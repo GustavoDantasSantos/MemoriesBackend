@@ -10,4 +10,5 @@ describe('List all users', () => {
         const users = await listAllUserService.execute();
         expect(users).toHaveLength(0);
     });
+    
 });
